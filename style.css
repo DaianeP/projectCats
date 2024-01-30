@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%
+}
+
+html,
+body,
+input {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-rows: 6.4rem auto auto auto 6.4rem;
+    grid-template-columns: 10% auto 10%;
+}
+
+header {
+  background: #387E96;
+    display: grid;
+    grid-area: 1/4/2/1;
+    align-items: center;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem 10rem;
+}
+
+  .input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  form {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+   
+    padding: 1.6rem;
+    background: rgba(255, 255, 255, 0.20);
+    border: none;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+  }
+  
+  .input-wrapper input::placeholder {
+    color: #FFF;
+  
+  }
+  
+  #avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+  
+    object-fit: cover;
+  
+    border-radius: 50%;
+  }
+
+  .conteinerImage {
+    display: grid;
+    grid-area: 2/4/3/1;
+    justify-items: stretch
+}
+
+.imageCat {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: grid;
+    grid-area: 3/3/4/2;
+}
+
+#title h1,
+h1 {
+  color: #202024;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+#title h1 {
+  margin-bottom: 0.8rem;
+}
+
+#title {
+    display: flex;
+   align-items: center;
+}
+
+.like {
+    margin-left: 40rem;
+}
+
+.unlike {
+    margin-left: 1.2rem;
+}
+
+.text {
+    margin-top: 3.0rem;
+}
+.gallery {
+    display: grid;
+    grid-area: 4/3/5/2;
+}
+
+.text,
+.gallery {
+  margin-top: 3.2rem;
+}
+
+.gallery h1 {
+  margin-bottom: 3.2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.details {
+  margin-left: 1.6rem;
+}
+
+.item h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.description p {
+  font-size: 1.4rem;
+}
+
+footer {
+    display: grid;
+    grid-area: 5/7/6/1;
+    background: #387E96;
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+
+/* ============= DESKTOP ============= */
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+
+        width: auto;
+        height: 100vh;
+    }
+
+    header {
+        display: grid;
+        grid-area: 1/7/2/1;
+    }
+
+    .conteinerImage {
+        display: grid;
+        grid-area: 2/5/4/2;
+        margin-top: 6rem;
+        margin-left: 10rem;
+    }
+
+    main {
+        display: grid;
+        grid-area: 3/5/5/2;
+        margin-left: 10rem;
+
+    }
+
+    .text {
+line-height: 160%;
+font-size: 1.6rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-area: 2/6/5/6;
+        margin: 6rem 10rem;
+    }
+  
+} 
